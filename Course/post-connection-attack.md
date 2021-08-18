@@ -193,3 +193,23 @@ Now start the dns
 dns.spoof on
 ```
 All websites works without only HSTS websites.
+
+## Injecting Javascript Code:
+Bettercap Code Injection
+- Inject Javascript code in loaded pages
+- Code gets executed by the target browser.
+- This can be used to
+	- Replace links
+	- Replace images
+	- Insert html elements
+	- Hook target browser to exploitation frameworks.
+	- + more!
+```js
+alert("Javascript test");
+```
+Save this code into your root directory as "/root/alert.js". ("/usr/local/share/bettercap/caplets/hstshijack/" and change the hstshijack.payloads *:/usr/.../.., *:/root/alert.js) and execute
+```bash
+bettercap -iface wlan0 -caplet /root/spoof.cap
+
+hstshijack/hstshijack
+```
