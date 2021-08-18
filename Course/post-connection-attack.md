@@ -213,3 +213,10 @@ bettercap -iface wlan0 -caplet /root/spoof.cap
 
 hstshijack/hstshijack
 ```
+## Do with GUI:
+```bash
+bettercap -iface wlan0
+ui.update # To install the web interface
+http-ui  # To launch the web interface
+```
+The default username and password is "user" and "pass" respectively.
