@@ -220,3 +220,12 @@ ui.update # To install the web interface
 http-ui  # To launch the web interface
 ```
 The default username and password is "user" and "pass" respectively.
+
+## WireShark:
+- Wireshark is a network protocol analyser
+- Designed to help network administrators to keep track of what is happening in their network.
+
+**How does it work?**
+- Logs packets that flow through the selected interface
+- Analyse all the packets.
+- When we are the MITM (Mill In The Middle attack), Wireshark can be used to sniff & analyse traffic sent/received by targets.
