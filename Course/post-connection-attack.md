@@ -229,3 +229,6 @@ The default username and password is "user" and "pass" respectively.
 - Logs packets that flow through the selected interface
 - Analyse all the packets.
 - When we are the MITM (Mill In The Middle attack), Wireshark can be used to sniff & analyse traffic sent/received by targets.
+
+## Fake Access Point:
+![Fake access point](https://www.kalitut.com/wp-content/uploads/2020/06/rogue-access-point-03.png). For that, you can download **wifi hotspot** from https://github.com/lakinduakash/linux-wifi-hotspot. After creating the hotspot, then can capture the packets with the help of WireShark or Bettercap.
